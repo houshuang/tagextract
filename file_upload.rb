@@ -36,7 +36,7 @@ class FileUpload < Sinatra::Base
 
     haml :index
   end
-  
+
   post '/upload' do
     if params[:file]
       filename = params[:file][:filename]

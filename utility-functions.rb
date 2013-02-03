@@ -89,33 +89,76 @@ class String
     self.replace(remove(*searches))
   end
 
-  def scan2(regexp) # returns named capture groups into compressed hash, inspired by http://stackoverflow.com/a/9485453/764519
-    names = regexp.names
+  # emulate Ruby 1.9.3 function
+  def each_line_with_index
+    c = 0
+    each_line do |l|
+      yield l, c
+      c += 1
+    end
+  end
+
+  # simulate named capture from Ruby 1.9.3 for Ruby 1.8.7
+  def scan2(regexp)
     captures = Hash.new
     scan(regexp).collect do |match|
-      nzip = names.zip(match)
-      nzip.each do |m|
-        captgrp = m[0].to_sym
-        captures.add(captgrp, m[1])
-      end
+      captures.add(:tagcapt, match[0].remove("@"))
     end
+
     return (captures == {}) ? nil : captures
   end
+
+  # For Ruby 1.9.3
+  # def scan2(regexp) # returns named capture groups into compressed hash, inspired by http://stackoverflow.com/a/9485453/764519
+  #   names = regexp.names
+  #   captures = Hash.new
+  #   scan(regexp).collect do |match|
+  #     nzip = names.zip(match)
+  #     nzip.each do |m|
+  #       captgrp = m[0].to_sym
+  #       captures.add(captgrp, m[1])
+  #     end
+  #   end
+  #   return (captures == {}) ? nil : captures
+  # end
 end
 
 
-# download a path to a location, require_type is array of acceptable content_types
-def dl_file(full_url, to_here, require_type = false)
-  require 'open-uri'
-  writeOut = open(to_here, "wb")
-  url = open(full_url)
-  if require_type
-    raise NameError unless require_type.index( url.content_type.strip.downcase )
+# enables you to do
+#   a = Hash.new
+#   a.add(:peter,1)
+# without checking if a[:peter] has been initialized yet
+# works differently for integers (incrementing number) and other objects (adding a new object to array)
+class Object
+  def add_safe(var,val)
+    if val.class == Fixnum
+      if self[var].nil?
+        self[var] = val
+      else
+        self[var] = self[var] + val
+      end
+    else
+      if self[var].nil?
+        self[var] = [val]
+      else
+        self[var] = self[var] + [val]
+      end
+    end
   end
-  writeOut.write(url.read)
-  writeOut.close
 end
 
+class Hash
+  def add_safe(var,val)
+    super
+  end
+  alias :add :add_safe  # we've already used this in the code
+end
+
+class Array
+  def add_safe(var,val)
+    super
+  end
+end
 
 # returns either the value of the block, or nil, allowing things to fail gracefully. easily
 # combinable with fail unless
