@@ -1,0 +1,443 @@
+Paragogy:
+[@corneli2012detecting] math learning online 
+	learning model @learning
+		A naıve idea: model learning as vocabulary acquisition
+		More complete: model learning as a change in patterns of behavior
+		Sophisticated: model learning in terms of the use of new heuristic strategies
+	evaluate learning - look for  @detecting_learning
+		Working at the cutting edge (introducing new material?)
+		Progressive problem solving (working at increasing depth?)
+		Collaborative effort (asking or answering questions?)
+		User-Identified high points (bookmarked threads and articles?)
+		Processing level (eg browsing vs attempting to solve problems?)
+		Quality of self-explanation (knowing how activities relate to goals?)
+		Exploration (trying different resources)
+[@corneli2010crowdsourcing] ActiveMath as repository and community for math learning
+	case for PLE: learning takes place in complex ecosystem, rather than building monolithing educational structure, support fully distributed, decentralized, organic learning activities @distrib_why
+		importance of "hackability" of education system
+	critique of learner-centered, embracing failure
+	Banduras, self-efficacy, making students aware of self-handicapping strategies they regularly use, build sense of personal efficacy: mastery experience, vicarious experience of extact, social persuasion, interpretation of psychological and emotional states @srl
+	(Blackboard as learned helplessness?) @distrib_why
+	organizational sensemaking Weick
+	distributed innovation vs centralized coordination @distrib_why
+	study: P2PU course on DIY math, build independent study skills @empirical
+		not successful, people excited, but didn't make it far
+		skills-based rather than content-based, no shared context
+		need for demand-driven rather than supply-driven selection of courses (survey of what people want to see)
+		explicit expression of levels of committment up front / social contract @soc_contract
+		skills building as "meta-course" - aggregating people from many different "content-based" courses, "back-channel" / "departmental seminar" @metalearning @ssrl
+	idea of paragogy @paragogy @principles
+		context as decentered center
+		peers are equal but different
+		learning is distributed and nonlinear
+		realize your dream and then wake up
+	role of meta-discussions, important, but not letting them take over @metalearning
+	tension between doing it yourself and with others - self-directed learning and individual learning @tension_individ_soc
+[@corneli2010live] tool for open collaborations between groups - open web annotations using modified Etherpad and browser plugin @tool
+[@corneli2011aparagogy] paragogy - theory of peer learning
+	peer learning is typically not given "first row" in educational theories @peer-learning
+		"good practices" around peer learning, takes from literature on FOSS communities, and Resnick online communities
+	importance of the learning environment, containing learner, setting or space, where learner acts, using tools and devices, collecting and interpreting info, interacting with others.  @learning-environment
+		environment should not be taken for given but co-constructed with peers
+	meta-learning as font of knowledge @metalearning
+	link to Knowledge Building and Mwanza's 8-step process (Activity Theory) @theory
+	method: after action review of several P2PU courses @method
+		very low participation
+		some nice examples of learning/artefacts @artefacts
+		need to better understand cycle that peers go through when signing up for courses etc 
+	P2PU itself as site of meta-learning about open ed, but hard to get a sense of what's going on, very distributed @metalearning
+		enable site-wide meta-discussions aggregatd from courses using tags
+[@corneli2011paragogy]
+	addresses challenge of peer-producing a useful and supportive context for self-directed learning @learning-environment
+	can inform design of learning analytics to enhance both individual and organizational learning @lanalytics
+	learner profiles for goal-setting and self-monitoring @srl
+	paragogy as response to Knowles 5 principles @andragogy
+	Cheren: learners may express desire to be self-directed, but lack required understanding of learning to be self-directed, need guidance and encouragement (scaffolding) @srl
+	continuum pedagogy - andragogy - paragogy @theory
+	Nonaka and Toyaa: knowldge is created as people interact over time in shared context, phases: Socialisation, Externalisation, Combination, Internalisation @theory
+	Benkler and criteria for peer production: objects must be modular, must be small in size (heterogenous granularity allows range of contributions), integration mechanism must be low-cost (automatic or enfored social norms) - parallel to paragogy: choice to work in small group vs group embedded in larger commons (vs individually?) - how much difference do you want to confront while engaging with learning process? (link [@dewaard2011using] redundancy) @theory @peer-production
+	Engestrom: boundary objects, sociality revolves around concrete shared objects, as opposed to abstract connections between people - idea of context or environment as largest shared object. environmnet co-created by inhabitants likely to be particularly meaningful and valued place. (interesting about value of "place" or "context" in distributed network / as opposed to PLNs which are individual and "invisible to others" (ref [@kop2011challenges]) @chat
+[@corneli2011personalised]
+	P2PLE - peer-to-peer learning environment @definition
+	helping learners co-construct learning environment using recommendations about people, content, tools - PLE + P2PU @learning-environment
+	learners work through tasks together, or with a degree of peer support - benefit from access to sophisticated, personalised, socially-aware task tracking system @tool @srl @ssrl
+		closely integrated or Web as platform
+		learners will make use of wide range of tools anyway (Willson et al 2008) @distrib_why
+		selecting objectives from large list of objectives, tools from list of tools, peers from list of peers etc - each choice implicit judgment about quality
+		we don't know if someone is moving from activity because finally satisfied, or because hopelessly frustrated
+		explicit evaluation/reflection phase (Fruhmann 2010), self-regulated learning (Zimmerman 1989)
+		requesting specific peer feedback (In this writing I'm trying to achieve X) @peer-learning
+	theory of peer-learning @peer-learning @theory
+		feedback not useful if agent can't use it
+		giving feedback tends to be "extra step" - should make it useful to give
+	reframe paragogy principles in terms of "deltas" - changes in peer-learning @principles @paragogy
+		changing nature of space (context as decentered center)
+		changing what I know about myself - metalearning @metalearning
+		changing my perspective
+		changing content or connectivity
+		changing objectives
+	sharing between groups as a way of "internationalization" @inter-group
+[@corneli2012paragogical]
+	peer-producing rich online learning environments @peer-production @learning-environment
+	Baudrillard Mirror of Production
+	participatory creation of educational resources -> experiential aspects of learning @peer-production @definition
+	have participants self-identify as experts on certain topics @lprofiles
+	recycling metaphor of content produced @inter-group @amplification
+[@corneli2012paragogy]
+	particularly well suited to open learning @definition
+		too new to have been codified, like new technologes
+		too personal to be ineresting to many, like topics in counseling psychology
+		forbidden, like politics and religion
+	making learning fun @motivation
+		understand not just deisre to avoid pain and secure pleasure, but how moving between these stats produces useful patterns
+		immersion - context and opportunity for application (jumping into it head first) - high stakes
+	balance between individual learning and group learning, what is best when, how do they mutually support each other? @tension_individ_soc
+	self-direction: Cheren - continuum to "highly self-directed" @srl
+	learning as adaptation (not always a good thing, even bad habits can be "learnt") @learning
+	peer-learning and externalities - downstream effect, digital traces @amplification
+		how can downstream users communicate with each other and add additional value to the system?
+	how can we detect "learning"? If we could see those microscopic events, could we engineer a system to make them come up more frequently? @detecting_learning
+
+
+P2PU:
+[@schmidt2009commons-based] - locate open education within "commons-based peer production", lessons from FOSS, and reputation/trust from peers for accreditation @peer-production @foss
+
+Other courses:
+[@couros2010developing]
+	OA graduate level ed tech course at Uof Regina @empirical
+		20 students, 200 outside students
+	facilitation theory based on study of FOSS communities @foss
+	theories @theory
+		social-cognitive theory: Bandura self-efficacy @srl
+		Vygotsky, Zone of Proximal Development @zpd
+		distributed scaffolding, Takab 2004
+		adult learning theory (Knowles 1970) five principles @andragogy
+		connectivism @connectivism
+		open teaching definition: Open teaching is described as the facilitation of learning experiences that are open, transparent, collaborative, and social @definition
+[@reynolds2008peoples-uni]
+	course on maternal health, built around competencies - leading to certification @empirical
+[@robles2011new] - example of study of learning within FOSS communities - looks at a number of examples of explicit learning, how communities invite "newbies" to join their coding projects @foss
+	also mentions P2PU as case study @p2pu
+[@weller2007distance]
+	how e-learning communities correspond to key characteristics of internet @theory
+	Rheingold (1993) importance of prolonged discussion in formation of community @community
+	characteristis of networks and potential for learning @networks @theory
+	openness - important, but must be protected to avoid spam, trolling @openness
+	decentralization @networks
+	Castells - network theory @networks
+	robustness (FOSS) @foss
+	five stage model of community development (Gongla and Rizzuto 2001): potential, building, engaged, active, adaptive @theory @community
+	Haythornthwaite, Kazmer & Robins (2000): importance of synchronous communication for building community @community @sync_async
+[@weller2010little] big and little OER
+	little OER has smaller granularity, less "authority", more unfinished - invites mashup and building upon, as opposed to big OER @oer @definition
+[@weller2011pedagogy]
+	instructivist pedagogy - direct consequence of demands of scarcity @theory
+	Wesch (2008) - affordances of physical learning environment (acquire, obey etc) @learning-environment
+	contrast with students in online word (user-generated content, crowd, participation, openness) @life-divide
+	list of assumptions - content abundant, sharing easy, social, connections light, organization cheap, generative system (Zittrain), user-generated content @theory @networks
+	pedagogies: resource-based learning, problem-based learning, constructivism, CoP, connectivism (post-network theory) @theory
+[@wiley2009openness]
+	similarly contrasts students in school with students in life (openness, network etc) @life-divide @openness
+		classes that continue past end of semester @cohort
+		personalization (which requires openness of material) @personalization
+		creating (also requires openness) @peer-production
+		term: "open teaching", material under open license, invite outside students, make it public @definition
+[@fini2009introopened] - first open course by Wiley, 2007, Italian group had pre-existing social network @empirical
+	attend: credit, non-credit, informal
+	CoP @cop
+	three phases: starting process (teacher designs), emergence of interactions (course runs, participants take more charge), restructuring of process (based on participant feedback/reflection) - cycle @theory
+	system provided: information, decision-making (sub-community enrolling together), scaffolding
+	participants support each other cognitive/emotional during course @peer-learning
+[@lawler2011edit] - Wikiversity
+	expansive learning
+	wikis afford learning by @wikis
+		tools for participation - be bold, click edit button
+		transparency - see how space is shaped over time
+		collaborative rules
+		socio-technical tools - shape way tools work or create new ones
+	role of conflict for learning @challenge_for_learning
+
+
+MOOCs:
+[@bell2010network]
+	How does Connectivism behave as a knowledge network (in the CCK08 course and beyond)? @connectivism
+	Can Actor Network Theory (and Social Shaping Theories in general) inform the development of Connectivism as a knowledge network? @actor_network_theory
+	connectivism as a knowledge network of people, published papers, blog posts, events @networks
+	tension between extending network and nurturing connections - the legitimate practice of filtering to manage information overload can militate against finding new connections, and the nurturing of fragile connections. Many people drop out - not able to maintain connections? @connectivism:challenge
+[@fini2009technological]
+	CCK08, survey @empirical
+	introduces concepts of
+		virtual learning environments -> multi-tool learning environment (Anderson 2008: affordances of the net) @tool @distrib_why @definition
+		personal knowledge management @pkm
+		motivation/time constraints in formal and informal online courses @motivation @srl
+		different personal motivations for success @motivation @success
+		situating open courses with OER @oer @definition
+		loosely-coupled teaching (Leslie 2007) @definition
+[@dewaard2011using]
+	mobiMOOC, some surveys, mostly own experience/theories, 556 participants, 74 actively contributing @empirical
+	theories @theory
+		self-organization (Laroche, Nicol & Mayer-Smith, 2007) @self-organization
+		complexity/chaos theory (Reigeluth 2004) @self-organization
+		fluid environments blur distinctions between schools, nature, society, formal and informal learning (Laroche et al 2009)
+		David & Sumara @complexity
+			internal diversity 
+			internal redundancy (to enable common understanding)
+			decentralized control
+			smaller complex systems contained within larger system
+		Vygotsky: collective scaffolding @zpd
+		theories of successful online communities (numberous citations) @community
+[@fournier2011value]
+	theory @theory
+		DeLaat: complexity of researching networked learning @complexity
+			human agency
+				dynamics of the network
+				power-relationships of network
+				amount of content generated
+			Needs @method
+				multi-method approach
+				computer-aided analysis of content
+				social network analysis (who talks to whom)
+				interview with critical event recall
+		study: PLENK 2010, 1580 participants, 40-60 active producers @empirical
+			analysis @method
+				social networks adapting pedagogical practice (tool)
+				Pajek, NetDraw, NVivo
+[@kop2008connectivism]
+	looking at the theory as a learning theory, no empiry
+	Learning @learning
+		learning happens when learner connects to and feeds information into learning community
+		learning community is a node, always part of larger network
+		nodes varying size and strength (concentration of info and number of people)
+		learning transpires through use of cognitive and affective domains
+		learning process is cyclical
+		peripheries of knowledge fields porous, learners may traverse networks through multiple knowledge domains
+		act of recognizing patterns shaped by complex networks
+			internal, as neural networks
+			external, as networks in which we adapt to the world around us (Siemens 2006b)
+
+	Learner skills necessary @challenge_for_learning
+		seek out current info
+		filter secondary/extraneous info
+		see connections between fields, ideas, concepts
+
+	View of knowledge @knowledge
+		information is constantly changing (validity and accuracy change over time)
+		knowledge is distributed across info network, stored in variety of digital formats @networks
+		learning and knowledge “rest in diversity of opinions” (Siemens 2008)
+		knowledge is “subsymbolic” (Downes 1996)
+		a recognition of a pattern in a set of neural events [if we are introspecting] or behavioural events [if we are observing]
+		the experience of a mental state that is at best seen as an approximation of what it is that is being said in words or experienced in nature, an approximation that is framed and, indeed, comprehensible only from which the rich set of world views, previous experiences and frames in which it is embedded @pattern-recognition
+		denies that knowledge is propositional (different from all other epistemologies)
+			other epistemologies are cognitivist - language and logic
+			connectivism is connectionist
+				not essentially based in linguistic structures
+				constraints and properties of linguistic structures are not the constraints and properties of connectivism
+		‘understanding’ is a distribution of connections across a network.
+		* to ‘know that P’ is therefore equated with ‘a certain set of neural connections’ that entail being in a certain physical state” unique to the experiencer of that state.
+		‘deep thinking’ or ‘creating understanding’ are equivalent to the process of making connections, and that there are no mental models per se (i.e., no systematically constructed rule-based representational systems), and what there is (i.e., connectionist networks) is not built, like a model; but instead it is grown, like a plant
+	critiques
+		not a learning theory
+		lack of knowledgeable other to challenge/introduce critical thoughts (Norris 2001, Freire and Macedo, Salmon 2004) @challenge_for_learning
+
+[@kop2011cloud] @mooc
+	literature review on fostering creativity in relation to MOOCs ([[:creativity]] @creativity
+[@kop2011pedagogy] @mooc
+	(PLENK 2010 and CCK 2011) @empirical
+		several surveys, ethnography, datamining, analytics  @method
+	theories @theory
+		Weller (2011): moving from scarcity (of content) to pedagogy of abundance
+		Folke (2010): resilience, agile development for learners
+		Shedroff (2009): web design for connection bulding and collaborations, framework
+		Kolb 1984 learning cycle
+			have experience or thought, want to know more
+			aggregate info, plan learning, involve others
+			thinking process, linking with other knowledge
+			repurposing info, produce artefact
+		presence
+		illusion of non-mediation (Lombard & Ditton, 1997) - experience activity as if taking place in "real life"
+			cognitive presence / teaching presence
+		new challenges for learners in "teacherless online environments"
+		principles of connectivist course
+			aggregation
+			remixing
+			repurposing
+			feed forward
+		conversational framework (Laurillard 1993)
+		pedagogy to support learning with social connections
+	findings @findings
+		small group produced, large group "lurked" @lurkers @group
+		value of aggregation and curation - the daily newsletter @aggregation
+		differetn levels of social presence/trust on different platforms (blogs, forum, Facebook) for different participants
+		use of Twitter
+[@mackness2010ideals]
+	CCK08 (survey, email interviews) @empirical @method
+	expectation @theory
+		autonomy
+		diversity
+		openness
+		connectedness
+	findings @findings @connectivism:challenge
+		all four were present, but the more these are present, the more the potential for participants' learning to be limited by the lack of structure, support and moderation @structure
+		and the more they seek to engage in traditional groups as opposed to open network @group @networks
+		very low percentage of active contributors (14%) - free ride or novice behaviour? (legitimate peripheral participation?) @lurkers
+		expertise divide - course easily moves outside of ZPD @zpd
+		factors limiting autonomy
+		freedom to self-organize means that groups organized in small safe groups - thus loosing much value of heterogenous network @group @challenge_for_learning
+		sharing requires trust (for many)
+		calling it a course can be misleading @definition
+
+	theory @theory
+		Darken and Sibert 1996: need to support wayfinding in large online networks @networks @convergence
+		Salmon (2004) need to support initial online socialisation (like Bielaczcy "training people to do Knowledge Building) @training
+		The key features of a complex, open course, rich in emergence, are that it is not defined by what must happen, but rather by what must not happen – the boundaries of openness (Cilliers, 2005; Snowden & Boone, 2007) @openness
+[@mcauley2010mooc]
+	effect of network - long tail effect - you will find someone who shares your interests @networks
+	specific expertise of facilitator can reach maximum possible number of people @networks
+	key questions
+		the extent to which it can support deep enquiry and the creation of sophisticated knowledge @depth
+		the breadth versus the depth of participation; @depth
+		ability to succeed for learners with different confidence, comfort levels with technology etc @diversity-of-learners
+		identifying the processes and practices that might encourage lurkers, or “legitimate peripheral participants”, to take on more active and central roles; @lurkers
+		the impact or value of even peripheral participation, specifically the extent to which it might contribute to participation in the digital economy in extra-MOOC practices; @amplification @lurkers
+		specific strategies to maximize the effective contribution of facilitators in particular and more advanced participants in general; @facilitators
+	eventedness: Cormier 2009 (importance of cohortness) @theory @cohort @sync_async
+	if learning means contributing, and contributions are "social currency" in course, students can disengage during a week discussing a topic far outside their ZPD (also because courses typically include a wide variety of different topics) - once disengaged, very hard ot re-engage @ssrl
+		how to scaffold/sustain participationt through content-heavy or less personalized topics @scaffold
+	MOOCs and relationships of power, network, position - who is listened to @power @connectivism:challenge
+	difficulty with "convergence" @convergence
+	very high demands for autonomy, taking open positions, critiquing others publicly - traits traditionally identified with privilege @connectivism:challenge @power
+	support participants technologically to form sub-communities that can last beyond the MOOC @scaffold @amplification
+	ability of Web 3.0 semantic tools to help convergence/more effective "distributed cognition" among group/network
+	learners @semantic
+		The ability to work with current digital tools to connect fragmented, diffuse, and distributed knowledge nodes, both human and artifactual, is perhaps the most important literacy that the MOOC environment rewards. Developing one's personal knowledge and presenting it through a coherent reflection or contribution, whether by means of blog posts, concept maps, video or another tool, is a high-level digital literacy. @convergence @learner-characteristics
+		 the ability to quickly scan and filter through potentially vast amounts of other people’s work in order to be able to find the work that can most challenge/complement one's own work. @learner-characteristics
+	patterns of participation: rapidly tapering off, research question @participation
+	better understand ideal role of instructors @facilitators
+	no pre-filtering of attendance is bound to lead to less engagement - not necessarily a problem @participation
+	understanding scaling - Gutenberg scaled content, need research on potential to scale group/network collaborations @scale
+	content, teaching can be duplicated, but learning happens in the individual, does not scale - needs support @scale @learning
+[@weller2001scaling] - interesting counterpoint to MOOCs, scaling a closed Open Uni course to 12,000 students with 500 tutors @scale @openness
+[@weller2007bridging] - topograhy of formality @formal-informal @assessment
+	Formalisation of learning as topography - currently a flat plain with a few high peaks, skyscrapers in the desert, representing courses. Most of life spent on the low plain, doing informal learning, huge climb if you want to get something formalized. This topology might even out, many more small peaks - opportunities to formalize something. Gather evidence of learning on daily basis. Actually more similar to an academic's life
+[@kop2011challenges]
+	Critical Literacies MOOC (377 participants) PLENK 2010 (1610 participants) @empirical
+		mixed methods, survey, discourse analyssi, learning analytics @method
+	triangle between educator, learners and course content - since 1980's add context in which people learn @theory
+	Sfard 1998: acquisition vs participation @theory
+	study @empirical
+		trying to validate four activities (aggregating , relating, creating, sharing)
+		whether problems from theory (critical literacies, presence, self-directed learning) was really problem
+	findings @findings
+		very small group of people that actually contributed regularly (but gave very positive feedback) @participation
+		much personal benefit from building PLE, network, comfortable with tools - which was not reflected in public artefacts and not visible to others (only captured through interviews) @ple @tension_individ_soc
+		impact of mother tongue @learner-characteristics
+		participants scored "algorithmic skills" low, but capacities for critical thinking, writing etc high
+		most did not reach four categories
+
+EduFeedr:
+[@poldoja2009conceptual]
+	definition of open course "Agora course" @definition
+		openly accessible content
+		open personal learning environment
+		free and open registration for participation
+	tech: mash-up personal learning environment @tool @convergence @aggregation
+[@poldoja2010edufeedr]
+		detailed description of project @tool @convergence @aggregation
+
+PLE/PLN:
+[@fournier2011researching] investigate super-learners with PLNs
+	theories @theory
+		Dron & Anderson 2007 differentiate learning in
+			groups (motivation/presence highest) @group
+			networks (open informal network - motivation is lower)  @networks
+			collectives (even lower motivation - connections between people in the form of tags)
+		Garrison et al 2000: presence @presence
+			cognitive
+			social
+			teacher (or expert, knowledgable other)
+		Attwell 2006, framework for e-learning evaluation
+[@kop2010design]
+		Jon Dron (2002): learning environment without tutor, intelligent tutoring system replacing that role @facilitators @intelligent-tutor
+		need for learner autonomy for PLN to be successful @learner-characteristics
+[@kop2010networked]
+	(one institutional online course, and 9 months participatory research in edublogosphere) @empirical
+	theory @theory
+		Gulati 2003: significance of institutionally controlled infrastructure vs informal @learning-environment
+		Barab & Squire, 2004: distributed cognition @distrib-cognition
+		Barabasi 2003: mathematics of distribution of power on networks - not equal, supernodes @power @networks
+		Goldhaber 1997: lack of deep thought/superficiality in online networks @depth
+		Greenfield 2006: need for knowledgeable other to challenge (also Bruce 2000 - avoid echo-bubble, technological affordances to expose us to uncomfortable ideas) @challenge_for_learning
+		learning across space and time - managing a range of personal learning projects (Sharples et al 2005) @srl
+
+[@haklev2011experience]
+	P2PU course on CSCL intro @empirical @p2pu
+	amplification, followers + core students @amplification
+	synchronous meetings - pacing, intellectual excitement @sync_async @cohort
+	different tools for synchronous meetings, Skype + Etherpad, threaded chat @tool @sync_async
+	dimensions of open course @openness @definition @facilitators
+		transparency
+		no grades/coercion
+		no certification/assessment
+		less credibility/authority of instructors
+		instructors less training/knowledge of subject area
+	dimensions of traditional course organizers' power @power @facilitators @definition
+		recognized expertise
+		institutional power and respect
+		power of grading
+		technological capabilities different from students (system admin)
+	challenge with too much meta discussion @metalearning
+
+
+
+
+Connectivism:
+	principles @theory @connectivism
+		Learning and knowledge rests in diversity of opinions
+		Learning is a process of connecting specialized nodes or information sources
+		Learning may reside in non-human appliances
+		Capacity to know more is more critical than what is currently known
+		Nurturing and maintaining connections is needed to facilitate continual learning
+		Ability to see connections between fields, ideas concepts is a core skill
+		Currency (accurate, up-to-date knowledge) is the intent of all connectivist learning activities
+		Decision-making is itself a learning process Choosing what to learn and the meaning of incoming information is seen through the lens of a shifting reality While there is a right answer now, it may be wrong tomorrow due to alterations in the information climate affecting the decision
+	networks @networks @theory
+		emphasising diversity, autonomy, openness and emergent knowledge (Downes)
+Open course platforms: @platforms @definition
+	1st gen MOOCs
+	2nd gen MOOCs
+		Udacity
+		Coursera
+		MITx?
+	smaller cohorts
+		P2PU
+		University of Reddit
+		Wikiversity?
+		Wikieducator?
+	OU Social Learn?
+	online bookclubs?
+
+To lookup:
+	From Open Content to Open Course Models: Increasing Access and Enabling Global Participation in Higher Education’ (Morgan & Carey 2009)
+	‘Open Educational Resources Plus Social Software: Threat or opportunity for Canadian Higher Education?’ (Anderson 2008) provides an abstract but useful (and well-cited) overview of OER use in the student context.
+	open participatory learning ecosystems @definition
+	particpatory infrastructure (Seely-Brown and Adler) @definition @networks
+	community of inquiry Garrison and Anderson @theory
+	cooperative model Boud and Miller @theory
+	Gagne's nine events of instruction @theory
+	Networked theories of learning (Goodyear, 2001) @theory
+	Snowden's 4 ontologies of knowledge @knowledge @theory
+	rhizomatic knowledge (Cormier, 2008) @knowledge @theory
+	paladin (Klamma Spaniol Dimitar 2006) @tool @method
+	mash-up PLE (Wild Modritscher Sigurdarson 2008) @definition @aggregation
+	trackback 'em all @aggregation @tool
+	Leinonen et al Wikiversity First Monday
+	Downes 2010 New technology supporting informal learning
+	Jones Luck 2008 blog aggregation management
+	Jones 2010 BIM feed aggregation and marking
+	Fini 2008 on Wiley wiki Fini, A., Formiconi, A., Giorni, A., Pirruccello, N., Spadavecchia, E., & Zibordi, E. (2008). IntroOpenEd 2007: An experience on Open Education by a virtual community of teachers. Journal of e-Learning and Knowledge Society, 4(1), 231-239. Retrieved from http://www.je-lks.it/en/08_01/11Apfini_en.pdf. p. 15
+	Cormac Lawler wikiversity
+	Aaron Krowne master thesis
+
+Aspects of open courses: @definition
+	co-horts / synchronicity
+	free of cost
