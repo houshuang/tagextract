@@ -31,7 +31,7 @@ def text2array(text, indent_pattern = /^(\t*)/)
   text.each_line_with_index do |l, i|
 
     # count tabs at front of line to get indent level
-    tabs = $1 if Indent_pattern =~ l
+    tabs = $1 if indent_pattern =~ l
     level = (defined? tabs) ? tabs.size : 0
 
     lines[i] = {:level => level, :line => l}
