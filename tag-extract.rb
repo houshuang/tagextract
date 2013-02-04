@@ -3,8 +3,8 @@ $:.push(File.dirname($0))
 require 'utility-functions'
 
 # =============================================================================
-# todo: see if Heroku/Site5 allows Ruby 1.9, otherwise rewrite regexps
-# try to modularize library - first parse, then output filters
+# todo:
+# -
 # do the transform on file uploaded
 # preview with HTML, offer various downloads
 # integrate with Bootstrap, nice design
@@ -133,14 +133,45 @@ def output_taskpaper(tags)
 end
 
 
+# format output for scrivener
+def output_scrivener(tags)
+  outdir = "#{Time.now.to_i.to_s}.tmp"
+  `mkdir '#{outdir}'`
+  tags.each do |tag, content|
+    out = ''
+    nockey = ''
+
+    tag = restore_ckeys(tag)
+    content.each do |fragments|
+      fragments[0] = restore_ckeys(fragments[0])
+      fragments[1] = restore_ckeys(fragments[1])
+
+      if fragments[1] == ''
+        nockey << "#{fragments[0]}\n\n"
+        next
+      end
+      out << "#{fragments[0]} [@#{fragments[1]}]\n\n"
+    end
+    if nockey.size > 0
+      out << nockey
+    end
+    File.write("#{outdir}/#{tag}.txt", out)
+  end
+  return outdir
+end
+
 a = File.read("Litreview.taskpaper")
 
 text = clean_ckeys(a)
 lines = text2array(text)
 lcontext = linecontext(lines)
 tags = process_tags(lines, lcontext)
-output = output_taskpaper(tags)
+
+puts output_scrivener(tags.dup)
+
+output = output_taskpaper(tags.dup)
 output = restore_ckeys(output)
+
 File.write('out.taskpaper', output)
 exit
 
@@ -162,25 +193,6 @@ exit
 
 
 
-# when 'scrivener'
-#   `mkdir '#{outdir}'`
-#   `rm -rf '#{outdir}/*.txt'`
-#   tags.each do |tag, content|
-
-#     out = ''
-#     nockey = ''
-#     content.each do |fragments|
-#       if fragments[1] == ''
-#         nockey << "#{fragments[0]}\n\n"
-#         next
-#       end
-#       out << "#{fragments[0]} [@#{fragments[1]}]\n\n"
-#     end
-#     if nockey.size > 0
-#       out << nockey
-#     end
-#     File.write("#{outdir}/#{tag}.txt", out)
-#   end
 
 
 
