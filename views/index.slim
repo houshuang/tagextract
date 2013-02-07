@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title Tag Extract
+    link rel="stylesheet" type="text/css" href="/css/style.css"
+
+  body
+    h1 Tag Extract
+
+    #content
+
+    markdown:
+      Upload a file to have it processed by tag extract, and download either a reorganized text file, or an archive suitable for Scrivener. [Read more](http://reganmian.net/blog/2012/06/13/tag-extract-a-tool-to-automatically-restructure-textoutline-using-tags/) about tag extract.
+
+      ## Basic format
+      Use **@tags** anywhere on the line to tag a line, and all indented lines below. For example, if you write
+
+            Some neat stuff @stuff
+              this
+              that
+              and the other
+            Yep
+
+      all lines between Some and Yep will be included.
+
+      You can use source markup to show where a certain text is from (whether it's an article, or an interview), this must be in the format [@something], and be the first thing on the line, for example:
+
+            [@Stian interview]
+              he said this
+              and this other thing @computers
+
+      In this case, "and this other thing" will be listed under the tag @computers, with the source [@Stian interview].
+
+      You can use multiple tags per line, and text will be listed several times. Text that is not tagged, will be listed at the bottom.
+
+      Download a sample file.
+
+      **Try it!**
+
+    |
+      <form action='/upload' enctype='multipart/form-data' method='post'>
+      <p><input name='file' type='file' /></p>
+      <p><input type='submit' value='Upload' /></p>
+      </form>

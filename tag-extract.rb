@@ -1,7 +1,7 @@
 # encoding: UTF-8
 $:.push(File.dirname($0))
 require 'utility-functions'
-
+require 'yaml'
 # =============================================================================
 # todo:
 # -
@@ -23,17 +23,46 @@ class TagExtract
     process_tags
   end
 
+  def taglist_to_html
+    tag_pre = %Q|<div class="toc"><div class="tocheader toctoggle" id="toc__header">Tags</div><div id="toc__inside"><ul class="toc">|
+    tag_post = %Q|</ul></li></ul></div></div>|
+
+    out = tag_pre
+    tag_list.each do |tag|
+      out << %Q|<li class="level1"><div class="li"><span class="li"><a href="##{tag}" class="toc">#{tag}</a></span></div></li>|
+    end
+    out << tag_post
+    return out
+  end
+
+  def to_html
+    text = to_taskpaper + "\n"
+
+    # TOC with tags
+    out = taglist_to_html
+
+    # change tabs to CSS styles
+    out << text.gsubcap(/^(\t*)(.+?)$/) {|tabs, content|"<p class=\"tab#{tabs.size}\">#{content}</p>"}
+    out.gsub!(%r|\<p class="tab0"\>(.+?):\<|, '<a  id="\1"></a><a class="tags" href="#\1">\0/a><')
+    out << "</div>"
+    return out
+  end
+
+  def tag_list
+    @tags.dup.map {|tag,_| restore_ckeys(tag) }
+  end
+
   def to_taskpaper
     text = output_taskpaper
     return restore_ckeys(text)
   end
 
   def clean_ckeys(text)
-    text.gsubs([/\[\@(.+?)\]/, '[!!!!\1]'], ['-', '____'])
+    return text.gsubs([/\[\@(.+?)\]/, '[!!!!\1]'], ['-', '____'])
   end
 
   def restore_ckeys(text)
-    text.gsubs([/\[\!!!!(.+?)\]/, '[@\1]'], ['____', '-'])
+    return text.gsubs([/\[\!!!!(.+?)\]/, '[@\1]'], ['____', '-'])
   end
 
   # insert lines into an array with first argument being indent level, second being line content
@@ -124,6 +153,7 @@ class TagExtract
 
   # format output for taskpaper
   def output_taskpaper
+     return @out_taskpaper if defined? @out_taskpaper
      out = ''
 
      @tags.dup.each do |tag, content|
@@ -142,14 +172,14 @@ class TagExtract
       end
       out << "\tNo citekey:\n#{nockey}" if nockey.size > 0
     end
+    @out_taskpaper = out
     return out
   end
 
 
   # format output for scrivener
   def to_scrivener(dir)
-    outdir = "#{Time.now.to_i.to_s}.tmp"
-    `mkdir '#{dir}'`
+    `mkdir '#{dir}.tmp'`
     @tags.dup.each do |tag, content|
       out = ''
       nockey = ''
@@ -168,29 +198,24 @@ class TagExtract
       if nockey.size > 0
         out << nockey
       end
-      File.write("#{outdir}/#{tag}.txt", out)
+      File.write("#{dir}.tmp/#{tag}.txt", out)
     end
-    return outdir
+    puts "zip '#{dir}' '#{dir}.tmp/*'"
+    `zip -j -r '#{dir}' '#{dir}.tmp/'`
   end
 end
 
 if __FILE__ == $0
 
-  a = File.read("Litreview.taskpaper")
+  a =File.read('./test.taskpaper')
 
-  text = clean_ckeys(a)
-  lines = text2array(text)
-  lcontext = linecontext(lines)
-  tags = process_tags(lines, lcontext)
+  litreview = TagExtract.new(a)
+puts   litreview.to_html
 
-  puts output_scrivener(tags.dup)
-
-  output = output_taskpaper(tags.dup)
-  output = restore_ckeys(output)
-
-  File.write('out.taskpaper', output)
-  exit
-
+  litreview.to_scrivener("tmp")
+litreview.output_taskpaper
+litreview.to_taskpaper
+litreview.to_scrivener("tmp")
 end
 
 

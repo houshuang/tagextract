@@ -8,6 +8,19 @@ def log(text)
   File.append("#{Script_path}/log.txt",text)
 end
 
+# make gsub with block nicer to use, from http://www.ruby-forum.com/topic/1448847#991490
+class String
+  def gsubcap(*arg)
+    gsub(*arg) { yield $~.captures }
+  end
+end
+
+class Hash
+  def dup
+    Marshal.load( Marshal.dump(self) )
+  end
+end
+
 
 # a few extra file functions
 class File
